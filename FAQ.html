@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="website.css">
+</head>
+<body>
+<header>
+        <h1>FAQ's</h1>
+</header>
+<div class="navbar">
+<a href="website1.php" >Home</a>
+<a href="#">Register/Sign In</a>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Vaccination Services</button>
+  <div id="Vaccination Services" class="dropdown-content">
+    <a href="searchVaccinationCentre.php">Search Vaccination Centers and Book Slot</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction1()" class="dropbtn">Platforms</button>
+  <div id="platforms" class="dropdown-content">
+    <a href="vaccinator.html">Vaccinator</a>
+    <a href="deptlogin.html">Department Login</a>
+    <a href="#">Vaccination Statistics</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction2()" class="dropbtn">Resources</button>
+  <div id="resources" class="dropdown-content">
+    <a href="How to get vaccinated.pptx">How to get vaccinated</a>
+    <a href="Dos and Dont.pdf">Do's and Don'ts</a>
+    <a href="#">Overview</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction3()" class="dropbtn">Support</button>
+  <div id="support" class="dropdown-content">
+    <a href="FAQ.html" target="_blank">FAQ's</a>
+  </div>
+</div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("Vaccination Services").classList.toggle("show");
+}
+function myFunction1() {
+  document.getElementById("platforms").classList.toggle("show");
+}
+
+function myFunction2() {
+  document.getElementById("resources").classList.toggle("show");
+}
+
+function myFunction3() {
+  document.getElementById("support").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<h4>Where can I register for COVID-19 vaccination?</h4>
+<h5>You can log into the CoWIN portal using the link www.cowin.gov.in and click on the “Register / Sign In yourself” tab to register for COVID-19 vaccination.</h5>
+<h4>Can you only access the CoWIN website and register to get your vaccination certificate a limited number of times in a day?</h4>
+<h5>No, there is no limitation in the number of times one normally logs in to CoWIN portal and accesses the certificate. 
+However, if one tries innumerably, the system treats such cases as a bug. If one inadvertently enters a wrong OTP, a waiting period of 180 seconds is to be maintained before one can request another OTP.</h5>
+<h4>After trying once do you need to wait certain amount of time to try again? In other words, can you only do it once every hour or so?</h4>
+<h5>No, if you have given wrong OTP 3 times, the system will not allow to login from the same instance. To login again refresh the browser to create a new instance and login with your mobile no and new otp.</h5>
+<h4>Is there a mobile app that needs to be installed to register for vaccination?</h4>
+<h5>There is no authorised mobile app for registering for vaccination in India except Aarogya Setu. You need to log into the CoWIN portal. Alternatively, you can also register for vaccination through the Aarogya Setu app and Umang app.</h5>
+<h4>Which age groups can register for vaccination on the CoWIN portal?</h4>
+<h5>All beneficiaries aged 18 years and above can register for vaccination.</h5>
+<h4>Is online registration mandatory for Covid-19 vaccination?</h4>
+<h5>Vaccination Centers provide for a limited number of on-spot registration slots every day. 
+Beneficiaries aged 45 years and above can schedule appointments online or walk-in to vaccination Centers. 
+Beneficiaries aged 18 years and above can schedule appointments online or walk-in to Government vaccination Centers. 
+However, beneficiaries aged 18-44 years should mandatorily register themselves and schedule appointment online before going to a Private vaccination centre.
+In general, all beneficiaries are recommended to register online and schedule vaccination in advance for a hassle-free vaccination experience.</h5>
+<h4>How many people can be registered in the CoWIN portal through one mobile number?</h4>
+<h5>Upto 4 people can be registered for vaccination using the same mobile number.</h5>
+<h4>How can beneficiaries with no access to smart phones or computers manage online registration?</h4>
+<h5>Upto 4 people can be registered for vaccination using the same mobile number. Beneficiaries can take help from friends or family for online registration.</h5>
+<footer>
+        <a href="FAQ.html" target="_blank">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+    </footer>
+</body>
+</html>
